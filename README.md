@@ -17,7 +17,11 @@ $ docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.5.3-astatine
 Spawn as many containers as needed:
 
 ```
-docker run -d --link selenium-hub:hub royestone/selenium-nodejs
+docker run -d --link selenium-hub:hub royestone/selenium-nodejs:latest
 ```
 
 Note that you link the container to the grid hub with `--link` and the name that you previously set with `--name`
+
+## License
+
+MIT
